@@ -1,0 +1,12 @@
+[Unit]
+Description=DriveRobot Service
+After=graphical.target
+[Service]
+Type=idle
+User=root
+ExecStart=/usr/bin/python3 /home/pi/grove.py/DriveRobot.py
+Restart=always
+RestartSec=0
+
+[Install]
+WantedBy=multi-user.target
